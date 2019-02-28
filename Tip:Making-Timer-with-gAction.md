@@ -144,3 +144,5 @@ command: {
   ... // Your other commands, if exists.
 },
 ```
+
+There is no sound (it just show ALERT on your mirror), no cancel method. but this is just an example. you can expand it.
