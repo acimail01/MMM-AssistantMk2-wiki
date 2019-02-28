@@ -103,6 +103,8 @@ Replace below codes as `gaction/actions.json`
     ]
 }
 ```
+gAction `"com.example.commands.TIMER"` is defined in this example. It can be triggered with `"alert after $delay $unit"`, `"$delay $unit timer"`. (e.g: `alert after 10 minutes`, `2 hours timer`)
+
 
 ## 2. Activate your gAction
 Register and activate your gAction with instruction :  https://github.com/eouia/MMM-AssistantMk2/tree/master/gaction#3-register-and-activate-actionsjson
