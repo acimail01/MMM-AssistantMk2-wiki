@@ -109,12 +109,13 @@ Register and activate your gAction with instruction :  https://github.com/eouia/
 If success, `Your app for the Assistant for project YOUR_PROJECT_ID is now ready for testing on Actions on Google enabled devices or the Actions Web Simulator...` will be displayed.
 
 ## 3. Configure module
-Open `config.js` and add this. This is a definition of action to be evaluated.
+Open `config.js` and modify it. This is a definition of action to be evaluated.
 ```js
 action: {
   "com.example.commands.TIMER" : {
     command: "TIMER",
-  }
+  },
+  ... // your other actions, if exists.
 },
 ```
 It means, when module gets "com.example.commands.TIMER" action(defined in actions.json), module will execute "TIMER" command.
@@ -137,6 +138,6 @@ command: {
       }
     }
   },
-  ... // Your other commands
+  ... // Your other commands, if exists.
 },
 ```
