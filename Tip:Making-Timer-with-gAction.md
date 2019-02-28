@@ -1,5 +1,5 @@
 This is a step-by-step example to making gAction for timer.
-My module is using `Assistant SDK for devices - Google Assistant Service`. It doesn't support the timer feature by SDK level. So I will show you how you make your custom gAction command to make timer.
+My module is using `Assistant SDK for devices - Google Assistant Service`. It doesn't support the timer feature by SDK level. So I will show you how to make your custom gAction command to make timer.
 
 ## Goal 
 Making commands like these;
