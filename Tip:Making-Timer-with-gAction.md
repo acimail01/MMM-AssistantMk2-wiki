@@ -5,6 +5,7 @@ My module is using `Assistant SDK for devices - Google Assistant Service`. It do
 Making commands like these;
 - "10 minutes timer"
 - "alert after 2 hours"
+
 And `SHOW_ALERT` after that time.
 
 ## Instruction
