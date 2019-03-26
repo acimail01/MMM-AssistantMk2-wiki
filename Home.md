@@ -3,6 +3,8 @@ Welcome to the MMM-AssistantMk2 wiki!
 - [[Configuration]]
 - [[Usage]]
 
+- [[gAction]]
+
 
 
 - [[Tip:Making Timer with gAction]]
