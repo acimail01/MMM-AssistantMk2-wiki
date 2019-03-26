@@ -1,4 +1,4 @@
-# CONFIGURATION (2.0.0)
+# CONFIGURATION (2.1.4)
 
 ## Very simple version but limited (just for checking)
 ```
@@ -90,13 +90,16 @@ This empty configuration will even work if you use;
     useWelcomeMessage: "", //Try "brief today" as this value. You can use this value to check module working when MM is starting.
 
     onIdle: {
-      timer: 1000*60*30, // if you don't want to use this feature, just set timer as `0` or command as ""
-      command: "HIDEMODULES"
+      //timer: 1000*60*30, // if you don't want to use this feature, just set timer as `0` or command as ""
+      //command: "HIDEMODULES",
+      timer: 0,
+      command: null,
     },
 
     onActivate: {
       timer: 0,
-      command: "SHOWMODULES"
+      //command: "SHOWMODULES"
+      command: null,
     },
 
 
@@ -138,12 +141,12 @@ This empty configuration will even work if you use;
     deviceModelId: "", // It should be described in your config.json. In most of case, you don't need to this.
     deviceInstanceId: "", // It should be described in your config.json. In most of case, you don't need to this.
 
-    action:{}, // You can catch your gAction command.
-
-    transcriptionHook: {}, // You can catch transcription hook and be able to make your own `COMMAND` with this.
+    recipes:["hide_and_show_all_modules.js", "reboot.js", "screen_onoff.js", "shutdown.js"],
+    transcriptionHook: {},
+    action: {}, // You can catch your gAction command.
+    command: {}, // You can catch transcription hook and be able to make your own `COMMAND` with this.
     //See the `transcriptionHook` section.
-
-    command: {}, // You can make your own MM command for gAction and transcriptionHook
+    action:{}, // You can make your own MM command for gAction and transcriptionHook
     //See the `command` section.
 
     notifications: { // You can redefine these notifications to communicate with specific modules.
