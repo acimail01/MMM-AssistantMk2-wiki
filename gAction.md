@@ -43,7 +43,7 @@ projectId: "YOUR_PROJECT_ID",
 ```
 
 ## 4. Catch the command from response of Assistant
-Add belows in your config.
+Add belows in your config or recipe
 ```
 action: {
   "com.example.commands.REBOOT" : {
