@@ -25,7 +25,7 @@ var recipe = {
 exports.recipe = recipe
 
 ```
-Now, you can this recipe to this module in configuration.
+Now, you can add this recipe to this module in configuration.
 ```js
 config: {
   ...
