@@ -166,8 +166,8 @@ This empty configuration will even work if you use;
 ```
 
 
-## With MMM-Hotword, using USB mic (plughw:1)
-```
+## With MMM-Hotword(v1), using USB mic (plughw:1)
+```js
 {
     module: "MMM-AssistantMk2",
     position: "top_right",
@@ -200,6 +200,46 @@ This empty configuration will even work if you use;
             profile: payload.hotword
           }
         }
+      },
+    },
+  },
+```
+## with MMM-Hotword(v2)
+```js
+```
+{
+    module: "MMM-AssistantMk2",
+    position: "top_right",
+    config: {
+      record: {
+        recordProgram : "arecord",  
+        device        : "plughw:1",
+      },
+
+      notifications: {
+        ASSISTANT_ACTIVATED: "HOTWORD_PAUSE",
+        ASSISTANT_DEACTIVATED: "HOTWORD_RESUME",
+      },
+    }
+  },
+  {
+    module: "MMM-Hotword",
+    config: {
+      mic: {
+        recordProgram : "arecord",  
+        device        : "plughw:1",
+      },
+      commands: {
+        "computer" : {
+          notificationExec: {
+            notification: "ASSISTANT_ACTIVATE",
+            payload: (detected, afterRecord) => {
+              return {profile:"default"}
+            }
+          },
+          afterRecordLimit:0,
+          restart:false,
+        },
       },
     },
   },
